@@ -9,7 +9,7 @@ set(CMAKE_BUILD_TYPE Release)
 #set(CMAKE_BUILD_TYPE Debug)
 
 # Look for the SFML components we're interested in
-set(SFML_DIR "C:/vclib/SFML-2.5.1-32-bit/lib/cmake/SFML")
+set(SFML_DIR "SFML path here!!!!!")
 find_package(SFML 2.5 COMPONENTS audio graphics window system REQUIRED)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_BINARY_DIR}/debug)
