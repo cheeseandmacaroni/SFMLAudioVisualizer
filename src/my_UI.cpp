@@ -194,7 +194,7 @@ void FileButton::draw(sf::RenderWindow & renderWindow)
 void FileButton::setPosition(sf::Vector2f newPosition)
 {
 	pos = newPosition;
-	textToshow.setPosition(sf::Vector2f(newPosition.x +2, newPosition.y + 2));
+	textToshow.setPosition(sf::Vector2f(newPosition.x + 2, newPosition.y + 2));
 	body.setPosition(newPosition);
 }
 
@@ -233,7 +233,7 @@ void FileList::draw(sf::RenderWindow &renderWindow)
 	for (int i = 0; i < buttons.size(); ++i)
 		buttons[i]->canBePressed = false;
 	int upBorder = 0;
-	buttonsInWindow > buttons.size() ? upBorder = buttons.size() : upBorder = buttonsInWindow;
+	buttonsInWindow > buttons.size() - firstButtonIndex ? upBorder = buttons.size() : upBorder = buttonsInWindow + firstButtonIndex;
 	for (int i = firstButtonIndex; i < upBorder; ++i)
 	{
 		buttons[i]->draw(renderWindow);
