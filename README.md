@@ -6,4 +6,4 @@ Before running the executable copy every folder from /resources to executable di
 
 Fluid simulation used in one of the visualizers is based on Jos Stam's paper: https://www.dgp.toronto.edu/public_user/stam/reality/Research/pdf/GDC03.pdf  
 
-Everything about FFT: http://psi-logic.narod.ru/fft/fftg.htm  
+FFT: http://psi-logic.narod.ru/fft/fftg.htm  
